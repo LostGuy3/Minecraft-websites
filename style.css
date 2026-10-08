@@ -1,0 +1,108 @@
+/*Minecraft Schriftart*/
+
+@font-face {
+    font-family: "Minecraft";
+    src: url(Fonts/minecraft_font.ttf);
+
+
+}
+
+
+
+/* Grundlegendes Styling */
+body {
+    margin: 0;
+    font-family: "";
+    background-color: lightgray;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    background-color: darkgreen;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+/* Pseudo-Klasse */
+nav a:hover {
+    background-color: limegreen;
+}
+
+/* Hauptbereich */
+main {
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Artikel */
+article,
+aside {
+    background-color: white;
+    padding: 20px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+/* Überschriften */
+h2 {
+    color: darkgreen;
+}
+
+h3 {
+    color: green;
+}
+
+/* Liste */
+li {
+    margin: 8px;
+}
+
+/* Span */
+span {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
